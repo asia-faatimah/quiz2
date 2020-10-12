@@ -1,0 +1,60 @@
+
+  
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 2</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Add to the CSS of this file as follows:
+
+Use the property justify-content to distribute the flex items evenly in the line (without changing their size) .
+Use the property align-items to center the row of boxes in the flexbox.
+Use the property align-selfto bring the box with the jump class to the bottom of the flexbox.
+Each of the above requires just one additional line of CSS.
+The end result should look like this:
+
+-->
+    <style>
+      
+        .container{
+            max-width: 1140px;
+            height:500px;
+            margin-left:auto;
+            margin-right:auto;
+            display:flex;
+            flex-direction:row;
+            background-color:cornflowerblue;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .box{
+            width:200px;
+            height:200px;
+            background-color: deeppink;
+            margin:16px;
+            text-align:center;
+            
+            
+        }
+
+        .jump{
+            align-self: flex-end;
+        }
+      
+      
+    </style>
+
+  </head>
+  <body>
+      <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box jump">3</div>
+        <div class="box">4</div>
+    </div>
+  </body>
+</html>
+
